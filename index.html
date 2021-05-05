@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-      
+     <!--test--> 
    <h1 class="page-title">San Foodcisco</h1>
     <nav class="navigation">
       <ul class="navigation-links">
@@ -29,6 +29,19 @@
         </li>
       </ul>
     </nav> 
+        
+    <div class="search-bar">   
+      <input type="text" name="name" id="food-search" placeholder="Search for Neighborhoods" />  
+      <button onclick="myFunction()">Search</button>
+      <script>
+        function myFunction(){
+          var nameValue = document.getElementById("food-search").value;
+          if (nameValue.toLowerCase() == "Japan-Town"){
+            location.replace("japan.html")
+          }
+        }
+      </script>
+    </div>
     
     <h3 class= "about-us">
       Our Goal
