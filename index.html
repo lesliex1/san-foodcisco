@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-     <!--test--> 
+  
    <h1 class="page-title">San Foodcisco</h1>
     <nav class="navigation">
       <ul class="navigation-links">
@@ -31,15 +33,32 @@
     </nav> 
         
     <div class="search-bar">   
-      <input type="text" name="name" id="food-search" placeholder="Search for Neighborhoods" />  
-      <button onclick="myFunction()">Search</button>
+      <input  style= "width: 200px; height: 40px; margin: auto " type="text" name="name" id="food-search" placeholder="Search for Neighborhoods" />  
+      <button style= "width: 50px; height: 40px; margin: auto " type= "submit" onclick="myFunction()">Search</button>
       <script>
         function myFunction(){
           var nameValue = document.getElementById("food-search").value;
-          if (nameValue.toLowerCase() == "Japan-Town"){
+          if (nameValue.toLowerCase() == "japan"){
             location.replace("japan.html")
           }
-        }
+          else if (nameValue.toLowerCase() == "sunset") {
+            location.replace("sunset.html")
+          }
+          else if (nameValue.toLowerCase() == "haight"){
+            location.replace("haight.html")
+          }
+          else if (nameValue.toLowerCase() =="japan town"){
+            location.replace("japan.html")
+          }
+          else if (nameValue.toLowerCase() == "haight ashbury"){
+            location.replace ("haight.html")
+          }
+        } 
+        $("#food-search").on('keyup', function (event) {
+          if (event.keyCode === 13) {
+             myFunction()
+          }
+       });
       </script>
     </div>
     
@@ -48,7 +67,7 @@
     </h3>
     <div>
     <p class="info">
-      Our goal is to make sure that you are able to find and enjoy food within any neighborhood in San Francisco. 
+      Our goal is to make sure that you are able to find and enjoy food within any neighborhood in San Francisco. All you have to do is type in a neighborhood or select from some of our options.
      <img class="bridge" src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY1MTc3MjE0MzExMDgxNTQ1/topic-golden-gate-bridge-gettyimages-177770941.jpg"/>
     </p>
     </div>

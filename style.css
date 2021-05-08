@@ -11,10 +11,9 @@ a:hover {
 }
 h1 {
   color: #373fff;
-  position: fixed;
-  top: 20px;
+  margin-top: 20px;
   font-style: italic;
-  margin-left: 50px
+  margin-left: 50px;
 }
 h3 {
   font-family: Times New Roman;
@@ -30,7 +29,6 @@ body {
   top: 20px;
   right: 50px;
   width: 40%;
-  position: fixed;
 }
 .navigation-links {
   list-style: none outside none;
@@ -52,7 +50,7 @@ p {
 .about-us {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 135px;
+  margin-top: 40px;
   text-align: center;
   width: 40%;
   font-size: 25px;
@@ -160,28 +158,34 @@ p {
 .haight-ashbury {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   text-align: center;
   width: 40%;
-  font-size: 23px;
+  font-size: 30px;
 }
 .japan-town {
  margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   text-align: center;
-  width: 45%;
+  width: 40%;
   font-size: 30px;
 }
-.japan { 
-  width:500px;
-  height:600px;
+.sunset{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  text-align: center;
+  width: 40%;
+  font-size: 30px; 
 }
 .haight-info {
   padding: auto;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
   font-size: 20px;
+  text-align: center;
 }
 .haight-food {
   margin-left: 50px
@@ -189,9 +193,12 @@ p {
 
 div.gallery {
   margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid #ccc;
   float: left;
   width: 500px;
+  text-align: center;
 }
 
 div.gallery:hover {
@@ -200,7 +207,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 div.desc {
@@ -213,10 +220,20 @@ div.space {
   margin: 140px 200px 100px 200px;
 }
 .page-numbers{
+position:absolute;
+margin-left: auto;
+margin-right: auto;
 position: absolute;
-margin-top: 2250px; 
+margin-top: 1500px; 
 left: 0; 
 width: 100%; 
 text-align: center;
 font-size: 20px;
+margin-bottom: 100px;
+}
+.search-bar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 30px;
 }
